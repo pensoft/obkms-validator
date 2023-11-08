@@ -12,7 +12,7 @@ def read(fname):
 setup(
     name='obkms-validator',
     keywords='openbiodiv pensoft biodiversity knowledge system',
-    version='0.0.1',
+    version='1.0.0',
     description='Validator for obkms identifiers in xmls',
     license='MIT',
     long_description=read('README.md'),
