@@ -14,6 +14,7 @@ except ImportError:
 class Validator():
     
     def __init__(self):
+        self.resource = None
         self._errors = []
         self.__check_nodes = 0
         self._isExecuteValidation = False
