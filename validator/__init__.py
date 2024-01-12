@@ -104,7 +104,8 @@ class Validator():
             ]
         )
         self.isValid(key='NOMENCLATURE', path=PensoftXpathConstants.NOMENCLATURE.value, obkms_id=PensoftAttrConstants.OBKMS_ID.value)
-        self.isValid(key='NOMENCLATURE_CIT_LIST', path=PensoftXpathConstants.NOMENCLATURE_CIT_LIST.value, obkms_id=PensoftAttrConstants.OBKMS_ID.value)
+        # Is disabled becouse openbiodiv-python check for uuids and then if not exists create with uuid5 and string path of node
+        # self.isValid(key='NOMENCLATURE_CIT_LIST', path=PensoftXpathConstants.NOMENCLATURE_CIT_LIST.value, obkms_id=PensoftAttrConstants.OBKMS_ID.value)
         self.isValid(key='NOMENCLATURE_CITATION', path=PensoftXpathConstants.NOMENCLATURE_CITATION.value, obkms_id=PensoftAttrConstants.OBKMS_ID.value)
         self.isValid(key='LIT_CITATION', path=".//back/ref-list/ref", obkms_id=PensoftAttrConstants.OBKMS_ID.value)
         self.isValid(key='TYPE_MATERIAL', path=PensoftXpathConstants.TYPE_MATERIAL.value, obkms_id=PensoftAttrConstants.OBKMS_ID.value)
